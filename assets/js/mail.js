@@ -3,8 +3,17 @@ document.getElementById('formid').addEventListener('submit', function (e) {
     window.open(`mailto:evtim.lyonov@gmail.com?subject=${document.getElementById('subject').value}&body=${document.getElementById('text').value}`);
     document.getElementById('message-sent').style.display = 'block';
     document.getElementById('sent-email').style.display = 'none';
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('subject').value = '';
-    document.getElementById('text').value = '';
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const text = document.getElementById('text');
+
+    name.value = '';
+    name.disabled = 'true';
+    email.value = '';
+    email.disabled = 'true';
+    subject.value = '';
+    subject.disabled = 'true';
+    text.value = '';
+    text.disabled = 'true';
 });
