@@ -1162,3 +1162,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.img-section {
+  text-align: center;
+}
+
+.img-section-wrap {
+  width: 175px;
+}
